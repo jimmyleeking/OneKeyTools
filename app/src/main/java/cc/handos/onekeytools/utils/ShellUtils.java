@@ -1,14 +1,18 @@
 package cc.handos.onekeytools.utils;
 
 import java.io.DataOutputStream;
-import java.io.IOException;
 
 /**
  * Created by jimmylee on 7/3/15.
  */
 public class ShellUtils {
 
-    public static boolean sudo(String... strings) {
+    /**
+     * 执行shell指令
+     * @param strings 指令集
+     * @return 指令集是否执行成功
+     */
+    public static boolean exeCmdByRoot(String... strings) {
         try {
             Process su = Runtime.getRuntime().exec("su");
             DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());

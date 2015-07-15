@@ -50,7 +50,7 @@ public class OneKeyAdbActivity extends Activity {
                 "stop adbd",
                 "start adbd"
         };
-        return ShellUtils.sudo(commandList);
+        return ShellUtils.exeCmdByRoot(commandList);
     }
 
 }

@@ -3,4 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="get_app_signature">获取签名</string>
+    <string name="one_key_adb">一键开启ADB调试</string>
 </resources>
